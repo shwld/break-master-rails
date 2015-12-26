@@ -32,7 +32,7 @@ module BreakMasterRails
       g.javascripts false
       g.helper false
       g.test_framework :rspec, view_specs: false, helper_specs: false, fixture: true, integration_tool: false
-      g.fixture_replacement :factory_girl, dir: "spec/support/factories"
+      g.fixture_replacement :factory_girl, dir: "spec/factories"
     end
   end
 end
