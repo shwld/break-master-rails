@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151226083536) do
+ActiveRecord::Schema.define(version: 20151226085614) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,13 @@ ActiveRecord::Schema.define(version: 20151226083536) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "scores_users", force: :cascade do |t|
+    t.integer "score_id"
+    t.integer "user_id"
+    t.index ["score_id"], name: "index_scores_users_on_score_id", using: :btree
+    t.index ["user_id"], name: "index_scores_users_on_user_id", using: :btree
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.integer  "platform_id"
@@ -44,6 +51,8 @@ ActiveRecord::Schema.define(version: 20151226083536) do
     t.index ["user_id"], name: "index_users_scores_on_user_id", using: :btree
   end
 
+  add_foreign_key "scores_users", "scores"
+  add_foreign_key "scores_users", "users"
   add_foreign_key "users_scores", "scores"
   add_foreign_key "users_scores", "users"
 end

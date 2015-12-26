@@ -16,29 +16,29 @@ Host: www.example.com
 ```
 HTTP/1.1 200
 Cache-Control: max-age=0, private, must-revalidate
-Content-Length: 256
+Content-Length: 258
 Content-Type: application/json; charset=utf-8
-ETag: W/"0f330c78239f1169080bc6d9ae280adb"
+ETag: W/"46cdf47f24f18a50758ec6189c8dd25b"
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
-X-Request-Id: 3e1457f9-1189-4082-910e-33239bee324a
-X-Runtime: 0.001840
+X-Request-Id: 60cf742c-0ff3-411b-9e06-fc058d048313
+X-Runtime: 0.001866
 X-XSS-Protection: 1; mode=block
 
 [
   {
-    "id": 34,
+    "id": 81,
     "name": "ゆうすけ",
-    "platform_id": 24,
-    "created_at": "2015-12-26T08:31:15.318Z",
-    "updated_at": "2015-12-26T08:31:15.318Z"
+    "platform_id": 115,
+    "created_at": "2015-12-26T09:11:36.884Z",
+    "updated_at": "2015-12-26T09:11:36.884Z"
   },
   {
-    "id": 35,
+    "id": 82,
     "name": "たかし",
-    "platform_id": 24,
-    "created_at": "2015-12-26T08:31:15.321Z",
-    "updated_at": "2015-12-26T08:31:15.321Z"
+    "platform_id": 115,
+    "created_at": "2015-12-26T09:11:36.886Z",
+    "updated_at": "2015-12-26T09:11:36.886Z"
   }
 ]
 ```
@@ -52,32 +52,32 @@ Userを新規作成する.
 ```
 POST /users HTTP/1.1
 Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
-Content-Length: 78
+Content-Length: 79
 Content-Type: application/x-www-form-urlencoded
 Host: www.example.com
 
-user[name]=%E3%83%86%E3%82%B9%E3%83%88+%E5%A4%AA%E9%83%8E&user[platform_id]=25
+user[name]=%E3%83%86%E3%82%B9%E3%83%88+%E5%A4%AA%E9%83%8E&user[platform_id]=116
 ```
 
 #### Response
 ```
 HTTP/1.1 201
 Cache-Control: max-age=0, private, must-revalidate
-Content-Length: 132
+Content-Length: 133
 Content-Type: application/json; charset=utf-8
-ETag: W/"3c8af2599803a9538298148d67d26354"
-Location: http://www.example.com/users/36
+ETag: W/"ce5b70e0b16678e3f19961fbc62bda1b"
+Location: http://www.example.com/users/83
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
-X-Request-Id: 879f8747-0eb6-4b04-baaa-e76a125364df
-X-Runtime: 0.007104
+X-Request-Id: e903b374-b99c-4234-93e7-37d27acdc560
+X-Runtime: 0.005170
 X-XSS-Protection: 1; mode=block
 
 {
-  "id": 36,
+  "id": 83,
   "name": "テスト 太郎",
-  "platform_id": 25,
-  "created_at": "2015-12-26T08:31:15.332Z",
-  "updated_at": "2015-12-26T08:31:15.332Z"
+  "platform_id": 116,
+  "created_at": "2015-12-26T09:11:36.900Z",
+  "updated_at": "2015-12-26T09:11:36.900Z"
 }
 ```
