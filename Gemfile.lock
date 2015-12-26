@@ -80,6 +80,11 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.8)
     execjs (2.6.0)
+    factory_girl (4.5.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.5.0)
+      factory_girl (~> 4.5.0)
+      railties (>= 3.0.0)
     faye-websocket (0.10.2)
       eventmachine (>= 0.12.0)
       websocket-driver (>= 0.5.1)
@@ -177,6 +182,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  factory_girl_rails
   pg (~> 0.18)
   puma
   rails (>= 5.0.0.beta1, < 5.1)
