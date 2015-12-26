@@ -1,6 +1,6 @@
 
-[users](users.rb)
+[users](users.md)
 
-[platform](platform.rb)
+[platform](platform.md)
 
-[score](score.rb)
+[score](score.md)
