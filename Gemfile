@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '>= 5.0.0.beta1', '< 5.1'
@@ -31,6 +31,10 @@ end
 
 group :test do
   gem 'rspec-rails'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
