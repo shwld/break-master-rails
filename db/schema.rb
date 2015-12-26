@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151226085614) do
+ActiveRecord::Schema.define(version: 20151226095030) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,13 +28,7 @@ ActiveRecord::Schema.define(version: 20151226085614) do
     t.decimal  "score"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "scores_users", force: :cascade do |t|
-    t.integer "score_id"
-    t.integer "user_id"
-    t.index ["score_id"], name: "index_scores_users_on_score_id", using: :btree
-    t.index ["user_id"], name: "index_scores_users_on_user_id", using: :btree
+    t.integer  "user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -44,15 +38,4 @@ ActiveRecord::Schema.define(version: 20151226085614) do
     t.datetime "updated_at",  null: false
   end
 
-  create_table "users_scores", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "score_id"
-    t.index ["score_id"], name: "index_users_scores_on_score_id", using: :btree
-    t.index ["user_id"], name: "index_users_scores_on_user_id", using: :btree
-  end
-
-  add_foreign_key "scores_users", "scores"
-  add_foreign_key "scores_users", "users"
-  add_foreign_key "users_scores", "scores"
-  add_foreign_key "users_scores", "users"
 end

@@ -5,7 +5,7 @@ Scoreの一覧を取得する.
 
 #### Request
 ```
-GET /users/77/scores HTTP/1.1
+GET /users/34/scores HTTP/1.1
 Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
 Content-Length: 0
 Content-Type: application/x-www-form-urlencoded
@@ -16,27 +16,29 @@ Host: www.example.com
 ```
 HTTP/1.1 200
 Cache-Control: max-age=0, private, must-revalidate
-Content-Length: 215
+Content-Length: 239
 Content-Type: application/json; charset=utf-8
-ETag: W/"f72d7c777e2d3856304bb507736d4f5c"
+ETag: W/"23fbccc5cdf1a299cadf9e2f19bc0af7"
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
-X-Request-Id: a28e2d56-24d7-426c-9ff5-1b96e7770450
-X-Runtime: 0.003703
+X-Request-Id: 586e45ff-47ec-4c02-8fa6-c46525cbafaa
+X-Runtime: 0.003745
 X-XSS-Protection: 1; mode=block
 
 [
   {
-    "id": 43,
+    "id": 8,
     "score": "1000.0",
-    "created_at": "2015-12-26T09:11:36.811Z",
-    "updated_at": "2015-12-26T09:11:36.811Z"
+    "created_at": "2015-12-26T10:04:58.658Z",
+    "updated_at": "2015-12-26T10:04:58.658Z",
+    "user_id": 34
   },
   {
-    "id": 44,
+    "id": 9,
     "score": "2000.0",
-    "created_at": "2015-12-26T09:11:36.815Z",
-    "updated_at": "2015-12-26T09:11:36.815Z"
+    "created_at": "2015-12-26T10:04:58.659Z",
+    "updated_at": "2015-12-26T10:04:58.659Z",
+    "user_id": 34
   }
 ]
 ```
@@ -48,7 +50,7 @@ Scoreを新規作成する.
 
 #### Request
 ```
-POST /users/78/scores HTTP/1.1
+POST /users/35/scores HTTP/1.1
 Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
 Content-Length: 17
 Content-Type: application/x-www-form-urlencoded
@@ -61,19 +63,20 @@ score[score]=1000
 ```
 HTTP/1.1 201
 Cache-Control: max-age=0, private, must-revalidate
-Content-Length: 106
+Content-Length: 119
 Content-Type: application/json; charset=utf-8
-ETag: W/"e76a6f824f62d57fcc00e9cd8a77393a"
+ETag: W/"5ea84aadd9ce3c24e1b2f107f40647b7"
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
-X-Request-Id: 191cacd0-7268-4862-85b6-d0e3a739fcd2
-X-Runtime: 0.004565
+X-Request-Id: e5980a38-cfa4-4542-a718-d6f165baaa13
+X-Runtime: 0.004881
 X-XSS-Protection: 1; mode=block
 
 {
-  "id": 45,
+  "id": 10,
   "score": "1000.0",
-  "created_at": "2015-12-26T09:11:36.831Z",
-  "updated_at": "2015-12-26T09:11:36.831Z"
+  "created_at": "2015-12-26T10:04:58.674Z",
+  "updated_at": "2015-12-26T10:04:58.674Z",
+  "user_id": 35
 }
 ```

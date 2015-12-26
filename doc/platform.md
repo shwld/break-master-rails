@@ -16,31 +16,31 @@ Host: www.example.com
 ```
 HTTP/1.1 200
 Cache-Control: max-age=0, private, must-revalidate
-Content-Length: 480
+Content-Length: 478
 Content-Type: application/json; charset=utf-8
-ETag: W/"b451f1f8fd514c1101cc23166440e1c7"
+ETag: W/"5db9fbeb3ec6bb38d8f1e2de7f3274a4"
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
-X-Request-Id: 146b2e23-d12a-49cd-988f-ab0e379f2c53
-X-Runtime: 0.001906
+X-Request-Id: cf026afe-86d5-48d8-90b9-63ecb437fe25
+X-Runtime: 0.001841
 X-XSS-Protection: 1; mode=block
 
 [
   {
-    "id": 108,
+    "id": 47,
     "title": "ブレイクマスターゆうすけの休息",
     "description": "脳を壊すアプリ",
     "url": "http://bre-mas.com/",
-    "created_at": "2015-12-26T09:11:36.668Z",
-    "updated_at": "2015-12-26T09:11:36.668Z"
+    "created_at": "2015-12-26T10:04:58.538Z",
+    "updated_at": "2015-12-26T10:04:58.538Z"
   },
   {
-    "id": 109,
+    "id": 48,
     "title": "ソードマスターゆうすけの謎",
     "description": "シューティングゲー",
     "url": "https://itunes.apple.com/jp/app/sodomasutayuusukeno-mi/id1029281903?mt=8",
-    "created_at": "2015-12-26T09:11:36.670Z",
-    "updated_at": "2015-12-26T09:11:36.670Z"
+    "created_at": "2015-12-26T10:04:58.540Z",
+    "updated_at": "2015-12-26T10:04:58.540Z"
   }
 ]
 ```
@@ -65,22 +65,22 @@ platform[title]=%E3%83%96%E3%83%AC%E3%82%A4%E3%83%B3%E3%83%96%E3%83%AC%E3%82%A4%
 ```
 HTTP/1.1 201
 Cache-Control: max-age=0, private, must-revalidate
-Content-Length: 212
+Content-Length: 211
 Content-Type: application/json; charset=utf-8
-ETag: W/"6ddbd9ecdf28e1b8845887cf6c85c79b"
-Location: http://www.example.com/platforms/110
+ETag: W/"50efe5cfeb8e6f460611f981ee7a9fec"
+Location: http://www.example.com/platforms/49
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
-X-Request-Id: c5644b20-2e3d-4b10-8757-2520fe7017a8
-X-Runtime: 0.015487
+X-Request-Id: 732f9e04-21a7-4d31-b642-6399aad7e36b
+X-Runtime: 0.003820
 X-XSS-Protection: 1; mode=block
 
 {
-  "id": 110,
+  "id": 49,
   "title": "ブレインブレイカーたかしの集中",
   "description": "概要が入ります",
   "url": "http://example.com/",
-  "created_at": "2015-12-26T09:11:36.684Z",
-  "updated_at": "2015-12-26T09:11:36.684Z"
+  "created_at": "2015-12-26T10:04:58.548Z",
+  "updated_at": "2015-12-26T10:04:58.548Z"
 }
 ```
